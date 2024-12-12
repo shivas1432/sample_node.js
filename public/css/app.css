@@ -1,0 +1,161 @@
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Sofia', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #6c757d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateZ(0); /* Creates a layer for 3D effects */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex: 1; /* Allows main content to grow and push footer to bottom */
+}
+
+.resume-section {
+    margin-bottom: 30px;
+    perspective: 1000px; /* Adds perspective for 3D effects */
+}
+
+.resume-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    transform: rotateX(5deg); /* 3D tilt effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="file"],
+.form-group select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for 3D effects */
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    margin-top: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translateZ(0); /* Creates a layer for 3D effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translateZ(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-secondary:hover {
+    background-color: #565e64;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #6c757d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateZ(0);
+   
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    perspective: 1000px; /* Adds perspective for 3D effects */
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+table th {
+    background-color: #f2f2f2;
+    transform: rotateX(5deg); /* 3D tilt effect */
+}
